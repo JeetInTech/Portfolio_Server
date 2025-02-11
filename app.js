@@ -89,6 +89,14 @@ app.post('/send-email', emailLimiter, async (req, res) => {
         res.status(500).json({ success: false, message: 'Failed to send email. Please try again later.' });
     }
 });
+app.get('/', (req, res) => {
+    res.send('Hello! Your API is running.');
+  });
+app.post('/send-email', (req, res) => {
+    // Now req.body should contain the parsed data
+    console.log(req.body);
+    res.json({ success: true });
+});
 
 // Start the server
 app.listen(PORT, () => {
