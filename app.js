@@ -59,9 +59,9 @@ app.post('/send-email', emailLimiter, async (req, res) => {
 
     // Email content and options
     const mailOptions = {
-        from: `"${name}" <babysneha69@gmail.com>`,  // Must be your verified email
+        from: `"${name}" <jeet.github.tm@gmail.com>`,  // Must be your verified email
         replyTo: email,  // This makes sure replies go to the sender
-        to: 'jeeth.enterprises108@gmail.com',
+        to: 'jeet.github.tm@gmail.com',
         subject: subject,
         text: message, // Fallback plain text version
         html: `
